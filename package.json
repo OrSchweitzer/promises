@@ -10,7 +10,8 @@
     "dev": "nodemon",
     "start": "npm run build && NODE_ENV=production node dist/index.js",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier src/**/*.ts --write"
+    "format": "prettier src/**/*.ts --write",
+    "prepare": "husky install"
   },
   "keywords": [
     "typescript",
@@ -33,6 +34,7 @@
     "@typescript-eslint/parser": "^5.8.0",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
